@@ -1,0 +1,61 @@
+
+Problem Statement
+
+    	
+The cows in Byterland are mooing loudly, annoying the residents very much. Mrs. Darcy of the villa Pemberley is planning to resolve this problem by allowing only one cow to moo. She will pick the cow whose mooing is the least offensive to all the other cows.
+
+The farmland in Pemberley is divided into n*m squares of grassland. Each square is either empty or occupied by a single cow. When a cow at (x,y) moos, the dissatisfaction of a cow at (i,j) is equal to the square of the distance between them: ((x-i)2 + (y-j)2). The total dissatisfaction is the sum of the dissatisfaction of all the cows.
+
+Return the minimal total dissatisfaction that can be achieved by allowing only a single cow to moo. The farmland will be given as a String[], where '.' characters denote empty squares, and 'C' characters denote squares occupied by cows.
+
+ 
+Definition
+
+    	
+Class:	MooingCows
+Method:	dissatisfaction
+Parameters:	String[]
+Returns:	int
+Method signature:	int dissatisfaction(String[] farmland)
+(be sure your method is public)
+    
+ 
+Constraints
+
+-	farmland will contain between 1 and 50 elements, inclusive.
+-	Each element of farmland will contain between 1 and 50 characters, inclusive.
+-	Each element of farmland will contain the same number of characters.
+-	Each character in farmland will be either uppercase 'C' or '.'.
+-	farmland will contain at least one uppercase 'C'.
+ 
+Examples
+
+0)	
+    	
+{"C..",
+ ".C.",
+ ".C."}
+Returns: 3
+If we set the uppermost cow to moo, the total dissatisfaction will be 2+5;
+If we set the middle cow to moo, the total dissatisfaction will be 2+1;
+If we set the bottommost cow to moo, the total dissatisfaction will be 1+5.
+Certainly we will choose the second plan.
+1)	
+    	
+{"CCCC",
+ "CCCC",
+ "CCCC"}
+Returns: 26
+2)	
+    	
+{"C"}
+Returns: 0
+3)	
+    	
+{"CCC....",
+ "C......",
+ "....C.C",
+ ".C.CC..",
+ "C......"}
+Returns: 81
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2006, TopCoder, Inc. All rights reserved.

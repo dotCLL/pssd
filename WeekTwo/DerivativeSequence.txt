@@ -1,0 +1,67 @@
+
+
+ Problem Statement for DerivativeSequence
+
+
+Problem Statement
+
+    	
+Given a sequence of K elements, we can calculate its difference sequence by taking the difference between each pair of adjacent elements. For instance, the difference sequence of {5,6,3,9,-1} is {6-5,3-6,9-3,-1-9} = {1,-3,6,-10}. Formally, the difference sequence of the sequence a1, a2, ... , ak is b1, b2, ... , bk-1, where bi = ai+1 - ai.
+
+The derivative sequence of order N of a sequence A is the result of iteratively applying the above process N times. For example, if A = {5,6,3,9,-1}, the derivative sequence of order 2 is: {5,6,3,9,-1} -> {1,-3,6,-10} -> {-3-1,6-(-3),-10-6} = {-4,9,-16}.
+
+You will be given a sequence a as a int[] and the order n. Return a int[] representing the derivative sequence of order n of a.
+
+ 
+Definition
+
+    	
+Class:	DerivativeSequence
+Method:	derSeq
+Parameters:	int[], int
+Returns:	int[]
+Method signature:	int[] derSeq(int[] a, int n)
+(be sure your method is public)
+    
+ 
+Notes
+
+-	The derivative sequence of order 0 is the original sequence. See example 4 for further clarification.
+ 
+Constraints
+
+-	a will contain between 1 and 20 elements, inclusive.
+-	Each element of a will be between -100 and 100, inclusive.
+-	n will be between 0 and K-1, inclusive, where K is the number of elements in a.
+ 
+Examples
+
+0)	
+    	
+{5,6,3,9,-1}
+1
+Returns: {1, -3, 6, -10 }
+The first example given in the problem statement.
+1)	
+    	
+{5,6,3,9,-1}
+2
+Returns: {-4, 9, -16 }
+The second example given in the problem statement.
+2)	
+    	
+{5,6,3,9,-1}
+4
+Returns: {-38 }
+3)	
+    	
+{4,4,4,4,4,4,4,4}
+3
+Returns: {0, 0, 0, 0, 0 }
+After 1 step, they all become 0.
+4)	
+    	
+{-100,100}
+0
+Returns: {-100, 100 }
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2010, TopCoder, Inc. All rights reserved.

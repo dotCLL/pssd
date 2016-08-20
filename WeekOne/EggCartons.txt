@@ -1,0 +1,42 @@
+
+Problem Statement
+
+    	There are two types of egg cartons. One type contains 6 eggs and the other type contains 8 eggs. John wants to buy exactly n eggs. Return the minimal number of egg cartons he must buy. If it's impossible to buy exactly n eggs, return -1.
+ 
+Definition
+
+    	
+Class:	EggCartons
+Method:	minCartons
+Parameters:	int
+Returns:	int
+Method signature:	int minCartons(int n)
+(be sure your method is public)
+    
+ 
+Constraints
+
+-	n will be between 1 and 100, inclusive.
+ 
+Examples
+
+0)	
+    	
+20
+Returns: 3
+He should buy 2 cartons containing 6 eggs and 1 carton containing 8 eggs. In total, he buys 3 egg cartons.
+1)	
+    	
+24
+Returns: 3
+There are two ways to buy 24 eggs: buy 4 cartons containing 6 eggs or buy 3 cartons containing 8 eggs. Minimize the number of cartons.
+2)	
+    	
+15
+Returns: -1
+He can't buy an odd number of eggs.
+3)	
+    	
+4
+Returns: -1
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2006, TopCoder, Inc. All rights reserved.

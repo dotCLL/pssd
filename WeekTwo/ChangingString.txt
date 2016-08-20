@@ -1,0 +1,62 @@
+
+Problem Statement
+
+    	
+You are given two Strings A and B that have the same length and contain only lowercase letters ('a'-'z'). The distance between two letters is defined as the absolute value of their difference. The distance between A and B is defined as the sum of the differences between each letter in A and the letter in B at the same position. For example, the distance between "abcd" and "bcda" is 6 (1 + 1 + 1 + 3).
+
+You must change exactly K characters in A into other lowercase letters. Return the minimum possible distance between A and B after you perform that change.
+
+ 
+Definition
+
+    	
+Class:	ChangingString
+Method:	distance
+Parameters:	String, String, int
+Returns:	int
+Method signature:	int distance(String A, String B, int K)
+(be sure your method is public)
+    
+ 
+Constraints
+
+-	A and B will each contain between 1 and 50 characters, inclusive.
+-	K will be between 1 and the length of A, inclusive.
+-	A and B will contain the same number of characters.
+-	A and B will contain only lowercase letters ('a' - 'z').
+ 
+Examples
+
+0)	
+    	
+"ab"
+"ba"
+2
+Returns: 0
+The minimum distance (equal to 0) can be achieved when we change 'a' to 'b' and 'b' to 'a'.
+1)	
+    	
+"aa"
+"aa"
+2
+Returns: 2
+We must change both letters 'a' to some other letters. Changing them to 'b' results in the smallest distance.
+2)	
+    	
+"aaa"
+"baz"
+1
+Returns: 1
+3)	
+    	
+"fdfdfdfdfdsfabasd"
+"jhlakfjdklsakdjfk"
+8
+Returns: 24
+4)	
+    	
+"aa"
+"bb"
+2
+Returns: 0
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2006, TopCoder, Inc. All rights reserved.

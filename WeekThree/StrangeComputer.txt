@@ -1,0 +1,49 @@
+
+Problem Statement
+
+    	You have been given a very strange computer. Its memory consists of several bits, each initially set to 0, and it can only perform the following type of operation:
+Choose one of the bits in memory, and choose a value - 0 or 1. All the bits between the selected bit and the last bit in memory, inclusive, will be set to the chosen value.
+
+For example, if the memory is "0010", and you choose the second bit and a value of 1, the memory will change to "0111".
+
+You are given a String mem. The number of characters in mem is equal to the number of bits in the computer's memory. Return the minimum number of operations required to set the computer's memory equal to mem.
+
+ 
+Definition
+
+    	
+Class:	StrangeComputer
+Method:	setMemory
+Parameters:	String
+Returns:	int
+Method signature:	int setMemory(String mem)
+(be sure your method is public)
+    
+ 
+Constraints
+
+-	mem will contain between 1 and 50 characters, inclusive.
+-	mem will contain only the characters '0' (zero) or '1' (one).
+ 
+Examples
+
+0)	
+    	
+"0011"
+Returns: 1
+Choose the third bit and a value of 1.
+1)	
+    	
+"000"
+Returns: 0
+No operations are needed.
+2)	
+    	
+"0100"
+Returns: 2
+0000 -> 0111 -> 0100
+3)	
+    	
+"111000111"
+Returns: 3
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2010, TopCoder, Inc. All rights reserved.

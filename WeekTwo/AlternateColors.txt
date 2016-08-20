@@ -1,0 +1,72 @@
+
+Problem Statement
+
+    	Bob is playing with his ball destroyer robot. Initially, Bob has r red balls, g green balls and b blue balls. The robot will repeat the following 3-step program until there are no balls left:
+
+
+
+If there is at least one red ball available, destroy one red ball.
+If there is at least one green ball available, destroy one green ball.
+If there is at least one blue ball available, destroy one blue ball.
+You are given the longs r, g and b. You are also given a long k. Find the color of the k-th ball (1-index based) that will be destroyed.
+If the color of the k-th ball to be destroyed is red, return "RED" (quotes for clarity, returned values are case-sensitive).
+If the color is green, return "GREEN".
+If the color is blue, return "BLUE".
+ 
+Definition
+
+    	
+Class:	AlternateColors
+Method:	getColor
+Parameters:	long, long, long, long
+Returns:	String
+Method signature:	String getColor(long r, long g, long b, long k)
+(be sure your method is public)
+    
+ 
+Constraints
+
+-	r, g and b will each be between 1 and 1000000000000 (10^12), inclusive.
+-	k will be between 1 and r+g+b, inclusive.
+ 
+Examples
+
+0)	
+    	
+1
+1
+1
+3
+Returns: "BLUE"
+The order in which the balls are destroyed is: Red, green and blue. The third ball was blue.
+1)	
+    	
+3
+4
+5
+4
+Returns: "RED"
+The order in which the balls are destroyed is: Red, green, blue, red, green, blue, red, green, blue, green, blue and blue.
+2)	
+    	
+7
+7
+1
+7
+Returns: "GREEN"
+3)	
+    	
+1000000000000
+1
+1
+1000000000002
+Returns: "RED"
+Once the only green and blue balls are destroyed, all of the remaining balls will be red.
+4)	
+    	
+653
+32
+1230
+556
+Returns: "BLUE"
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2010, TopCoder, Inc. All rights reserved.

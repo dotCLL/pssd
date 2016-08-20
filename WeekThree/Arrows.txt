@@ -1,0 +1,55 @@
+
+Problem Statement
+
+    	
+In this problem, a left single arrow is defined as a "less than" character ('<') immediately followed by zero or more consecutive hyphen characters ('-'). A left double arrow is a "less than" character ('<') immediately followed by zero or more consecutive equals characters ('='). A right single arrow is zero or more hyphen characters ('-') immediately followed by a "greater than" character ('>'). A right double arrow is zero or more equals characters ('=') immediately followed by a "greater than" character ('>'). For example, the following are arrows (quotes for clarity only): "==>", "<-", "<", "<===", "--->", ">". The length of an arrow is the number of characters it contains.
+
+You will be given a String s. Return the length of the longest arrow in s, or -1 if it does not contain any arrows.
+
+ 
+Definition
+
+    	
+Class:	Arrows
+Method:	longestArrow
+Parameters:	String
+Returns:	int
+Method signature:	int longestArrow(String s)
+(be sure your method is public)
+    
+ 
+Notes
+
+-	Arrows may overlap. See examples for further clarifications.
+ 
+Constraints
+
+-	s will contain between 1 and 50 characters, inclusive.
+-	Each character in s will be one of '<', '>', '-' or '='.
+ 
+Examples
+
+0)	
+    	
+"<--->--==>"
+Returns: 4
+The arrows contained in s in this case are, by order of appearance:
+
+"<", "<-", "<--", "<---", "--->", "-->", "->", ">", "==>", "=>" and ">".
+
+Note that many of these arrows, including some pairs with one left arrow and one right arrow, are overlapping.
+1)	
+    	
+"<<<<<<<<<<"
+Returns: 1
+All arrows are of length 1. Note that "<" is both a left single arrow and a left double arrow according to the definition.
+2)	
+    	
+"----==-"
+Returns: -1
+No arrows contained.
+3)	
+    	
+"<----=====>"
+Returns: 6
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2006, TopCoder, Inc. All rights reserved.

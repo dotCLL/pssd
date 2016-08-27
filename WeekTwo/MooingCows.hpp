@@ -10,8 +10,8 @@ using namespace std;
 
 class MooingCows {
 public:
-  // Inputs: vector<string>
-  // Outputs: int
+  // Inputs: the lay of the farmland
+  // Outputs: minimum total dissatisfaction
   // Calculates the dissatisfaction of surrounding cows to a mooing cow.
   int dissatisfaction(vector<string> farmland);
 };

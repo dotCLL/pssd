@@ -1,5 +1,5 @@
 // PSSD
-// Week 3 - Q2.
+// Week 3 - Q2
 #include <iostream>
 using namespace std;
 
@@ -13,15 +13,23 @@ using namespace std;
 
 class QuickSums {
 public:
+  // Inputs: string representation of a set of numbers, the sum that these set of numbers needs to add to.
+  // Outputs: the least number of addition symbols.
+  // Calculates the minimum number of + symbols needed to achieve a particular sum.  
   int minSums(string numbers, int sum);
 private:
+  // Inputs: string representation of an equation, the goal sum 
+  // Outputs: number of plusses or -1
+  // Calculates the sum of the given string and also the number of plusses in the string.
   int calculateInt(string str, int sums);
+  // Inputs: length of binary combinations
+  // Outputs: void.
+  // Fills a vector with all possible binary combinations of plusses.
   void fillBins(int n);
   vector<string> bins;
   vector<int> plussesVec;
 };
 
-// Calculates the minimum number of + symbols needed to achieve a particular sum.
 int QuickSums::minSums(string numbers, int sum) {
   // Clear vecs.
   bins.clear();
@@ -59,7 +67,6 @@ int QuickSums::minSums(string numbers, int sum) {
   };
 };
 
-// All possible binary combinations of plusses
 void QuickSums::fillBins(int n) {
   for (int i = 0; i < (pow(2,n)); i++) {
     string bin10 = bitset<10>(i).to_string();
@@ -67,7 +74,6 @@ void QuickSums::fillBins(int n) {
   };
 };
 
-// Calculates the sum of the given string and also the number of plusses in the string.
 int QuickSums::calculateInt(string str, int sums) {
   // holder.
   string sum = "";

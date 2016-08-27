@@ -10,8 +10,8 @@ using namespace std;
 
 class ChangingString {
 public:
-  // Inputs: String, String, Int.
-  // Outputs: Int.
+  // Inputs: first string, second string, number of characters allowed to be swapped.
+  // Outputs: minimum distance between the two strings after swaps.
   // Returns the minimum distance after swapping so many characters in a string compared to another string.
   int distance(string A, string B, int K);
 };

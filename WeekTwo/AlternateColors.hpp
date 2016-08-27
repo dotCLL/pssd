@@ -9,8 +9,8 @@ using namespace std;
 
 class AlternateColors {
 public:
-  // Inputs:	long, long, long, long
-  // outputs:	string
+  // Inputs:	# red balls, # green balls, # blue balls, # total balls
+  // outputs:	the last ball to be destroyed.
   // Finds the colour of the last ball to be destroyed.
   string getColor(long r, long g, long b, long k);
 };

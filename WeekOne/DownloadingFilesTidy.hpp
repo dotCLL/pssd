@@ -1,5 +1,5 @@
 // PSSD
-// Week one - Q2
+// Week 1 - Q2
 #include <iostream>
 using namespace std;
 

@@ -8,8 +8,8 @@ using namespace std;
 
 class FibonacciDiv2 {
 public:
-  // Inputs: Int.
-  // Outputs: Int.
+  // Inputs: any integer N.
+  // Outputs: the number of additions or subtractions to get to the closest fibonacci number.
   // Returns the smallest number of needed additions or subtractions of a given number to fit it into the fibonacci sequence.
   int find(int N);
 private:

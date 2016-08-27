@@ -1,5 +1,5 @@
 // PSSD
-// Week 3 - Q5.
+// Week 3 - Q5
 #include <iostream>
 using namespace std;
 
@@ -9,8 +9,14 @@ using namespace std;
 
 class ExerciseMachine {
 public:
+  // Inputs: string representation of a particular time.
+  // Outputs: number of times a percentage will be displayed.
+  // Calculates how many times a perfectly whole percentage of the time can be shown on a screen for a given time.
   int getPercentages(string time);
 private:
+  // Inputs: string representation of a particular time.
+  // Outputs: an integer relating to the number of seconds of that time.
+  // Returns the total number of seconds for a given hour:minutes:seconds string representation.
   int convertToSecs(string time);
 };
 

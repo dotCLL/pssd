@@ -1,5 +1,5 @@
 // PSSD
-// Week 3 - Q$.
+// Week 3 - Q4
 #include <iostream>
 using namespace std;
 
@@ -9,6 +9,9 @@ using namespace std;
 
 class Arrows {
 public:
+  // Inputs: string combination.
+  // Outputs: largest arrow possible.
+  // Given a random string calculate the longest possible arrow amidst the string.
   int longestArrow(string s);
 private:
   vector<int> maxs;

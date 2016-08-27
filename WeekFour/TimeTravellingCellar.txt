@@ -1,0 +1,53 @@
+
+Problem Statement
+
+    	Gogo owns N wine cellars, numbered 0 through N-1. He possesses a time machine and will use it to advance time in one of the cellars, maturing all the wine inside. However, as a side effect, he must also choose one other cellar and turn back time there, making the wine inside younger. 
+
+
+
+You are given two int[]s, profit and decay. Advancing time in cellar i will gain Gogo a profit of profit[i]. Turning back time in cellar i will lose him decay[i] in profit. Return the maximum profit that Gogo can gain by advancing time in one cellar and turning time back in another cellar. It is guaranteed that this profit will be positive.
+ 
+Definition
+
+    	
+Class:	TimeTravellingCellar
+Method:	determineProfit
+Parameters:	int[], int[]
+Returns:	int
+Method signature:	int determineProfit(int[] profit, int[] decay)
+(be sure your method is public)
+    
+ 
+Constraints
+
+-	profit will contain between 2 and 50 elements, inclusive.
+-	Each element of profit will be between 1 and 10000, inclusive.
+-	decay will contain the same number of elements as profit.
+-	Each element of decay will be between 1 and 10000, inclusive.
+-	The maximum profit that Gogo can gain will be positive.
+ 
+Examples
+
+0)	
+    	
+{1,2,3}
+{3,1,2}
+Returns: 2
+Advance time in cellar 2 and turn back time in cellar 1. The total profit is 3 - 1 = 2.
+1)	
+    	
+{3,2}
+{1,2}
+Returns: 1
+He can't advance and turn back time in the same cellar.
+2)	
+    	
+{3,3,3}
+{1,1,1}
+Returns: 2
+3)	
+    	
+{1000,500,250,125}
+{64,32,16,8}
+Returns: 992
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2010, TopCoder, Inc. All rights reserved.

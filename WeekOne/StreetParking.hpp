@@ -1,5 +1,5 @@
 // PSSD
-// StreetParking practice question 03
+// Week 1 - Q3
 #include <iostream>
 using namespace std;
 
@@ -9,10 +9,12 @@ using namespace std;
 
 class StreetParking {
 public:
-  static int freeParks(string street);
+  // Inputs: a string representation of the street.
+  // Outputs: number of free spots.
+  // Calculates the total number of free parking spots on a street.
+  int freeParks(string street);
 };
 
-// Calculates the total number of free parking spots on a street.
 int StreetParking::freeParks(string street) {
   // Vars
   int numOfFreeParks = 0;

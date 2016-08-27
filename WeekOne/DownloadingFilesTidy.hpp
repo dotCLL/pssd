@@ -1,5 +1,5 @@
 // PSSD
-// Downloading files practice question 02
+// Week one - Q2
 #include <iostream>
 using namespace std;
 

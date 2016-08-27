@@ -1,10 +1,13 @@
 // PSSD
-// Week 3 - Q1.
+// Week 3 - Q1
 #include <iostream>
 using namespace std;
 
 class Truckloads {
 public:
+  // Inputs: number of crates at a warehouse, max # of crates that will fit in a truck.
+  // Outputs: number of trucks.
+  // Returns the number of trucks needed to move a particular number of crates.
   int numTrucks(int numCrates, int loadSize);
 };
 

@@ -9,9 +9,11 @@ using namespace std;
 #include <sstream> // StringStream
 #include <algorithm> // Sort
 
-// Computes the total download time of a set of files.
 class DownloadingFiles {
 public:
+  // Inputs: a vector holding strings representing files to be downloaded.
+  // Outputs: total download time.
+  // Computes the total download time of a set of files.
   double actualTime(vector<string> v);
 private:
   // Vars

@@ -5,10 +5,12 @@ using namespace std;
 
 class DerivativeSequence {
 public:
+  // Inputs: sequence of number, order.
+  // Outputs: new sequence n of a.
+  // Returns a vector of a completed mathematical sequence.
   vector<int> derSeq(vector<int> a, int n);
 };
 
-// returns a vector of a completed mathematical sequence.
 vector<int> DerivativeSequence::derSeq(vector<int> a, int n) {
   // Create resVec.
   vector<int> resVec = a;

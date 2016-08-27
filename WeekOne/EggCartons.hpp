@@ -3,14 +3,14 @@
 #include <iostream>
 using namespace std;
 
-// class
 class EggCartons {
 public:
-  // Prototypes.
+  // Inputs: number of eggs.
+  // Outputs: least number of cartons.
+  // Finds out the best combination of cartons needed for a particular number of eggs.
   int minCartons(int n);
 };
 
-// Finds out the best combination of cartons needed for a particular number of eggs.
 int EggCartons::minCartons(int n) {
   // Base cases - Less than 6 or odd.
   if ((n < 6) || (n%2 != 0)) {

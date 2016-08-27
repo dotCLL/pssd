@@ -1,5 +1,5 @@
 // PSSD
-// EggCartons practice question 04
+// Week 1 - Q4
 #include <iostream>
 using namespace std;
 

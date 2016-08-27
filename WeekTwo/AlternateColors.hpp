@@ -9,10 +9,12 @@ using namespace std;
 
 class AlternateColors {
 public:
+  // Inputs:	long, long, long, long
+  // outputs:	string
+  // Finds the colour of the last ball to be destroyed.
   string getColor(long r, long g, long b, long k);
 };
 
-// Finds the colour of the last ball to be destroyed.
 string AlternateColors::getColor(long r, long g, long b, long k) {
   // vars.
   long smallest;

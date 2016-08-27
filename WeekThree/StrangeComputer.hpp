@@ -1,13 +1,13 @@
 // PSSD
-// Week 3 - Q3.
+// Week 3 - Q3
 #include <iostream>
 using namespace std;
 
-// Includes.
-
-
 class StrangeComputer {
 public:
+  // Inputs: goal memory representation.
+  // Outputs: minimum number of operations.
+  // Calculates how many operations are needed to recreate the goal representation.
   int setMemory(string mem);
 };
 

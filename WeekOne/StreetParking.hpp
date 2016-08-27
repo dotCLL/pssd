@@ -12,6 +12,7 @@ public:
   static int freeParks(string street);
 };
 
+// Calculates the total number of free parking spots on a street.
 int StreetParking::freeParks(string street) {
   // Vars
   int numOfFreeParks = 0;

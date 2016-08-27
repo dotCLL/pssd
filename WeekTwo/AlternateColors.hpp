@@ -12,8 +12,8 @@ public:
   string getColor(long r, long g, long b, long k);
 };
 
+// Finds the colour of the last ball to be destroyed.
 string AlternateColors::getColor(long r, long g, long b, long k) {
-  // cout << "0" << endl;
   // vars.
   long smallest;
   long nMin;
@@ -46,10 +46,8 @@ string AlternateColors::getColor(long r, long g, long b, long k) {
   } else {
     return "ALL ZERO";
   };
-  // cout << "1" << "small: " << smallest << " nMin: " << nMin << endl;
   // Handle K.
   if ((k - nMin) <= 0) {
-    // cout << "2" << endl;
     // Simulate counting each down using mod depending on the number of colours remaining.
     if (!red0 && !green0 && !blue0) {
       // mod 3 then return the right colour.
@@ -85,11 +83,8 @@ string AlternateColors::getColor(long r, long g, long b, long k) {
       return "ALL ZERO";
     };
   } else {
-    // cout << "3" << endl;
-    // cout << r << "***" << g << "***" << b << "***" << k << endl;
-    // Handles negative balls.
+    // Handles negative ball count.
     if ((r-smallest) < 0) {
-      // cout << "r-smallest" << endl;
       if (g == b) {
         if (g % 2 == 0) {
           return "BLUE";
@@ -102,7 +97,6 @@ string AlternateColors::getColor(long r, long g, long b, long k) {
         return "GREEN";
       };
     } else if ((g-smallest) < 0) {
-      // cout << "g-smallest" << endl;
       if (r == b) {
         if (r % 2 == 0) {
           return "BLUE";
@@ -115,7 +109,6 @@ string AlternateColors::getColor(long r, long g, long b, long k) {
         return "RED";
       };
     } else if ((b-smallest) < 0) {
-      // cout << "b-smallest" << endl;
       if (g == r) {
         if (g % 2 == 0) {
           return "GREEN";

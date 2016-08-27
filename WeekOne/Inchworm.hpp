@@ -1,5 +1,5 @@
 // PSSD
-// Inchworm practice question 01
+// Week 1 - Q1
 #include <iostream>
 using namespace std;
 

@@ -1,5 +1,5 @@
 // PSSD
-// ThrowTheBall practice question 05
+// Week 1 - Q5
 #include <iostream>
 using namespace std;
 
@@ -8,12 +8,12 @@ using namespace std;
 
 class ThrowTheBall {
 public:
-  // Expected inputs:	int, int, int
-  // Expected outputs:	int
+  // Inputs:	number of friends, received ball cutoff, pass length. 
+  // Outputs:	number of passes.
+  // Simulates some friends throwing a ball around. 
   int timesThrown(int N, int M, int L);
 };
 
-// Simulates some friends throwing a ball around.
 int ThrowTheBall::timesThrown(int N, int M, int L) {
   // Vars.
   int passes = 0;
@@ -46,7 +46,7 @@ int ThrowTheBall::timesThrown(int N, int M, int L) {
         currentPlayer = (currentPlayer - N);
       };
     };
-    // PAss the ball to the next player.
+    // Pass the ball to the next player.
     passes++;
   };
   // Return the number of passes made once the game has finished.

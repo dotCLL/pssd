@@ -1,0 +1,52 @@
+
+Problem Statement
+
+    	
+The people of RGB Street have decided to paint each of their houses red, green, or blue. They've also decided that no two neighboring houses will be painted the same color. The neighbors of house i are houses i-1 and i+1. The first and last houses are not neighbors.
+
+You will be given a String[] houses, where the ith element corresponds to house i. Each element of houses will be formatted as "R G B" (quotes for clarity only), where R, G and B are the costs of painting the corresponding house red, green, and blue, respectively. Return the minimal total cost required to perform the work.
+
+ 
+Definition
+
+    	
+Class:	RGBStreet
+Method:	estimateCost
+Parameters:	String[]
+Returns:	int
+Method signature:	int estimateCost(String[] houses)
+(be sure your method is public)
+    
+ 
+Constraints
+
+-	houses will contain between 1 and 20 elements, inclusive.
+-	Each element of houses will be in the format "R G B" (quotes for clarity only), where R, G and B are integers with no leading zeroes.
+-	In each element of houses, the values R, G and B will be between 1 and 1000, inclusive.
+ 
+Examples
+
+0)	
+    	
+{"1 100 100", "100 1 100", "100 100 1"}
+Returns: 3
+"RGB" is the best choice, and the total cost of the work is equal to 3.
+1)	
+    	
+{"1 100 100", "100 100 100", "1 100 100"}
+Returns: 102
+The minimum possible cost is 102, and there are two solutions that result in that cost: "RGR" and "RBR".
+2)	
+    	
+{"26 40 83", "49 60 57", "13 89 99"}
+Returns: 96
+3)	
+    	
+{"30 19 5", "64 77 64", "15 19 97", "4 71 57", "90 86 84", "93 32 91"}
+Returns: 208
+4)	
+    	
+{"71 39 44", "32 83 55", "51 37 63", "89 29 100", 
+ "83 58 11", "65 13 15", "47 25 29", "60 66 19"}
+Returns: 253
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2006, TopCoder, Inc. All rights reserved.

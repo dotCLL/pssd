@@ -1,0 +1,50 @@
+Problem Statement
+
+    	
+We have a sequence of integers. We want to remove duplicate elements from it.
+
+You will be given a int[] sequence. For each element that occurs more than once leave only its rightmost occurrence. All unique elements must be copied without changes.
+
+ 
+Definition
+
+    	
+Class:	SimpleDuplicateRemover
+Method:	process
+Parameters:	int[]
+Returns:	int[]
+Method signature:	int[] process(int[] sequence)
+(be sure your method is public)
+    
+ 
+Constraints
+
+-	sequence will have between 1 and 50 elements, inclusive.
+-	Each element of sequence will be between 1 and 1000, inclusive.
+ 
+Examples
+
+0)	
+    	
+{1,5,5,1,6,1}
+Returns: {5, 6, 1 }
+We left the third 1, the second 2 and the only 6.
+1)	
+    	
+{2,4,2,4,4}
+Returns: {2, 4 }
+2)	
+    	
+{6,6,6,6,6,6}
+Returns: {6 }
+3)	
+    	
+{1,2,3,4,2,2,3}
+Returns: {1, 4, 2, 3 }
+4)	
+    	
+{100,100,100,99,99,99,100,100,100}
+Returns: {99, 100 }
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2010, TopCoder, Inc. All rights reserved.
+
+    
